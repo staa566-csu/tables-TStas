@@ -97,6 +97,10 @@ sorted_by_total_table <- kbl(sorted_by_total, format.args = list(big.mark = ",")
 # sorted_by_total_table
 ```
 
+## Image of kableExtra output
+![Alt text](thailand_provinces_kable_extra.png)
+
+
 ## Use DT framework
 
 Using the DataTables (DT) framework provides another way to generate a dynamic table, and easily allows the user to sort by any of the columns.  Limiting the display to 10 provinces at a time helps with readability.  Sorting by the various columns and only viewing 10 rows at a time provides the user a good overview of the data in a short amount of time (and effort!).
@@ -113,4 +117,5 @@ province_population_DT <- province_populations %>%
 # save
 # saveWidget(province_population_DT,  file="thailand_province_dynamic_table.html")
 ```
-![Alt text](thailand_province_dynamic_table.html)
+## Image of DT output 
+![Alt text](province_population_DT.png)
